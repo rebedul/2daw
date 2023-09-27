@@ -1,0 +1,19 @@
+*{background-color: gainsboro;
+font-family: 'Roboto', sans-serif;
+
+}
+
+.cabecera{
+font-weight: bold;
+text-align: center;
+background-color: beige;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+
+.cabecera:hover {
+    color: orange;
+
+    /* text-shadow: black 0.1em 0.1em 0.2em */
+  }
+
