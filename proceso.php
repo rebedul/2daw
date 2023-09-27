@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+    // info v. php
     phpinfo();
     ?>
     
