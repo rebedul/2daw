@@ -1,7 +1,7 @@
 *{background-color: gainsboro;
 font-family: 'Roboto', sans-serif;
-
 }
+
 
 .cabecera{
 font-weight: bold;
@@ -14,6 +14,8 @@ padding-bottom: 8px;
 .cabecera:hover {
     color: orange;
 
-    /* text-shadow: black 0.1em 0.1em 0.2em */
   }
 
+.impar{
+    color: red;
+  }
