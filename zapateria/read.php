@@ -38,17 +38,19 @@
                     echo "<td>".$mostrar['material']."</td>";
                     echo "<td class='derecha'>".$mostrar['precio']."</td>";
                     echo "<td class='derecha'>".$mostrar['existencias']."</td>";
-                    // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>";
-                    echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>";
-              echo "</tr>";          
+                    // VERSIÓN HIPERVÍNCULO (deshabilitada):
+                    // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>"; 
+                    // VERSIÓN BOTÓN:
+                    echo "<td><button><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</button></td>";
+
+                    echo "</tr>";          
+
                 }
         echo "</table>";
-
     
         }else{                                  // TAL VEZ NO HAYA DATOS
             echo "ATENCION, no hay registros para listar...";     
         }
         ?>
-
 </body>
 </html>

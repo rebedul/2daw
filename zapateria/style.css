@@ -25,12 +25,15 @@ body{
 
 a{
     text-decoration: none;
-    width: 100px;
+    width: 500px;
     font-weight: bold;
    
 }
 
 .container{
+    font-size:25px;
+
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
