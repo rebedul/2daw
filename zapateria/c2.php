@@ -7,6 +7,11 @@ echo "<link rel='stylesheet' href='./css/style.css'>";
 
 $codigo = $_POST['codigo'];
 $marca = $_POST['marca'];
+$tipo = $_POST['tipo'];
+$talla = $_POST['talla'];
+$color = $_POST['color'];
+$material = $_POST['material'];
+$precio = $_POST['precio'];
 $existencias = $_POST['existencias'];
 
 //----  INICIO COMPROBACIÓN INDICE DUPLICADO 
@@ -16,7 +21,8 @@ $resultadox = mysqli_query($conexion,$sql);
 
 if (!mysqli_num_rows($resultadox)){     //Con la negación (!), esperamos un resultado 0 (no existe clave en tabla)
 
-        $mandato = "INSERT INTO articulos (codigo,marca,existencias) VALUES ('$codigo','$marca','$existencias')";
+        $mandato = "INSERT INTO articulos (codigo,marca,tipo,tallas,color,material,precio,existencias) 
+                    VALUES ('$codigo','$marca','$tipo','$talla','$color','$material','$precio','$existencias')";
         $resultado = mysqli_query ($conexion,$mandato);
 
         if ($resultado){
