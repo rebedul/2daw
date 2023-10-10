@@ -38,8 +38,9 @@
                     echo "<td>".$mostrar['material']."</td>";
                     echo "<td class='derecha'>".$mostrar['precio']."</td>";
                     echo "<td class='derecha'>".$mostrar['existencias']."</td>";
+                    // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>";
                     echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>";
-                echo "</tr>";          
+              echo "</tr>";          
                 }
         echo "</table>";
 

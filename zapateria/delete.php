@@ -16,18 +16,12 @@
         $mandato = mysqli_query($conexion,$sql);
 
         if ($mandato){
-            echo "REGISTRO ".$codigo." BORRADO CORRECTAMENTE";
+            echo "Registro ".$codigo." BORRADO CORRECTAMENTE";
             header("Refresh: 2; url=read.php");
         }
         else{
             echo "NO HAY CONEXIÓN, O VETE TÚ A SABER...";
         }
-
-
-
-
-
-
     ?>
 </body>
 </html>
