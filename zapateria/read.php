@@ -26,6 +26,7 @@
                 echo "<th>Material</th>";
                 echo "<th>Precio</th>";
                 echo "<th>Existencias</th>";
+                echo "<th>BORRAR</th>";
             echo "</tr><br>";
             while ($mostrar = mysqli_fetch_array($result) ) { 
                 echo "<tr>";                    // MOSTRAMOS REGISTROS
@@ -37,6 +38,7 @@
                     echo "<td>".$mostrar['material']."</td>";
                     echo "<td class='derecha'>".$mostrar['precio']."</td>";
                     echo "<td class='derecha'>".$mostrar['existencias']."</td>";
+                    echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>ELIMINAR</td>";
                 echo "</tr>";          
                 }
         echo "</table>";
