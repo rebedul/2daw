@@ -1,3 +1,33 @@
-body{
-    background-color: chartreuse;
+*{
+    margin-top: 7px;
 }
+
+body{
+    background-color: lightgray;
+}
+.titular{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input:focus{
+    background-color: aqua;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+ul,li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.cabecera{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:darkblue;
+
+}
+

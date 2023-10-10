@@ -1,0 +1,25 @@
+*{
+    margin: 10px;
+    background-color: gainsboro;
+    font-family: 'Roboto', sans-serif;}
+//SÓLO PARA MENSAJE DE ÉXITO
+.ok{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+input{
+    margin-bottom: 10px;
+    background-color: white;
+    
+}
+
+button{
+    background-color: white;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
