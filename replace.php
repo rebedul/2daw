@@ -14,13 +14,13 @@ echo $texto."<br>";
 echo "Se han efectuado ".$contador." reemplazos";
 
 
-//Solución larga no deseable: recorrer con bucle FOR
-// $contador = 0;
-// for ($i=0; $i < strlen($lorem) ; $i++) { 
-//     if  ($lorem[$i]==$vocal){
-//         $contador = $contador +1;
-//     }
-// }
+Solución larga no deseable: recorrer con bucle FOR
+$contador = 0;
+for ($i=0; $i < strlen($lorem) ; $i++) { 
+    if  ($lorem[$i]==$vocal){
+        $contador = $contador +1;
+    }
+}
 
 
 
