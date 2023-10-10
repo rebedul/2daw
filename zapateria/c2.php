@@ -26,10 +26,9 @@ if (!mysqli_num_rows($resultadox)){     //Con la negación (!), esperamos un res
         $resultado = mysqli_query ($conexion,$mandato);
 
         if ($resultado){
-            echo "<p class='exito'>Registro del artículo </p>".$marca;// si éxito, aplicamos CSS
-            echo "<p class='exito'> grabado con éxito</p><br>"; // si éxito, aplicamos CSS
+            echo "<p class='exito'>Registro del artículo </p>".$marca."<p class='exito'> grabado con éxito</p><br>"; // si éxito, aplicamos CSS
             echo "Devolviendo al FORMULARIO principal...<br>";
-            header("Refresh: 2; url=c1.html");
+            header("Refresh: 1; url=c1.html");
         }
         else{
 

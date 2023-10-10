@@ -16,7 +16,8 @@
         $mandato = mysqli_query($conexion,$sql);
 
         if ($mandato){
-            echo "REGISTRO BORRADO CORRECTAMENTE";
+            echo "REGISTRO ".$codigo." BORRADO CORRECTAMENTE";
+            header("Refresh: 2; url=read.php");
         }
         else{
             echo "NO HAY CONEXIÓN, O VETE TÚ A SABER...";
