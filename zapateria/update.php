@@ -15,7 +15,6 @@
         $sql = "SELECT * FROM articulos WHERE codigo = $id";
         $resultado = mysqli_query($conexion,$sql);
         $mostrar = mysqli_fetch_array($resultado);
-     
     ?>
 
     <form action="update2.php" method="post" autocomplete="off">
