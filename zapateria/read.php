@@ -43,11 +43,8 @@
                     // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>"; 
                     // VERSIÓN BOTÓN (la escogida):
                     echo "<td><button><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR ".$mostrar['codigo']."</button></td>";
-                    // echo "<td><button><a href='update.php?codigo=".$mostrar['codigo']."'>MODIFICAR</button></td>";
                     echo "<td><button><a href='update.php?codigo=".$mostrar['codigo']."'>MODIFICAR ".$mostrar['codigo']."</button></td>";
-
                     echo "</tr>";          
-
                 }
         echo "</table>";
     
