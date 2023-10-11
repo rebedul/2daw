@@ -27,6 +27,7 @@
                 echo "<th>Precio</th>";
                 echo "<th>Existencias</th>";
                 echo "<th>BORRAR</th>";
+                echo "<th>MODIFICAR</th>";
             echo "</tr><br>";
             while ($mostrar = mysqli_fetch_array($result) ) { 
                 echo "<tr>";                    // MOSTRAMOS REGISTROS
@@ -40,8 +41,9 @@
                     echo "<td class='derecha'>".$mostrar['existencias']."</td>";
                     // VERSIÓN HIPERVÍNCULO (deshabilitada):
                     // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>"; 
-                    // VERSIÓN BOTÓN:
+                    // VERSIÓN BOTÓN (la escogida):
                     echo "<td><button><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</button></td>";
+                    echo "<td><button><a href='update.php?codigo=".$mostrar['codigo']."'>MODIFICAR</button></td>";
 
                     echo "</tr>";          
 
