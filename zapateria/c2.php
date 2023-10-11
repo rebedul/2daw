@@ -18,7 +18,7 @@ $existencias = $_POST['existencias'];
 
 $sql = "SELECT * FROM articulos WHERE codigo = $codigo";
 $resultadox = mysqli_query($conexion,$sql);
-
+//COMPROBACIÓN SI YA EXISTE EL CÓDIGO
 if (!mysqli_num_rows($resultadox)){     //Con la negación (!), esperamos un resultado 0 (no existe clave en tabla)
 
         $mandato = "INSERT INTO articulos (codigo,marca,tipo,tallas,color,material,precio,existencias) 

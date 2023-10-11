@@ -8,7 +8,7 @@
 </head>
 <body>
 <iframe src="header.html" width="100%" height="50px" frameborder="0"></iframe>
-
+<!-- Datos que pasamos a UPDATE2.PHP -->
     <?php
         include("con_db.php");
         $id = $_GET['codigo'];
@@ -20,15 +20,23 @@
 
     <form action="update2.php" method="post" autocomplete="off">
         <!-- VALUE: valor que procede de la Tabla ARTICULOS, que entendermos 'por defecto' para cada campo -->
-        <input type="text" name="codigo" autofocus placeholder="Código" value="<?php echo $mostrar['codigo']?>"><br>
-        <input type="text" name="marca" placeholder="Marca" value="<?php echo $mostrar['marca']?>"><br>
-        <input type="text" name="tipo" placeholder="Tipo" value="<?php echo $mostrar['tipo']?>"><br>
-        <input type="text" name="talla" placeholder="Talla" value="<?php echo $mostrar['tallas']?>"><br>
-        <input type="text" name="color" placeholder="Color" value="<?php echo $mostrar['color']?>"><br>
-        <input type="text" name="material" placeholder="Material" value="<?php echo $mostrar['material']?>"><br>
-        <input type="text" name="precio" placeholder="Precio" value="<?php echo $mostrar['precio']?>"><br> 
-        <input type="text" name="existencias" placeholder="Existencias" value="<?php echo $mostrar['existencias']?>"><br>
-
+        <label>Código....</label>
+        <!-- Código será READONLY, no se puede cambiar -->
+        <input type="text" name="codigo" autofocus readonly value="<?php echo $mostrar['codigo']?>"><br>
+        <label>Marca.....</label>
+        <input type="text" name="marca" value="<?php echo $mostrar['marca']?>"><br>
+        <label>Tipo........</label>
+        <input type="text" name="tipo" value="<?php echo $mostrar['tipo']?>"><br>
+        <label>Tallas.....</label>
+        <input type="text" name="talla" value="<?php echo $mostrar['tallas']?>"><br>
+        <label>Color......</label>
+        <input type="text" name="color" value="<?php echo $mostrar['color']?>"><br>
+        <label>Material...</label>
+        <input type="text" name="material" value="<?php echo $mostrar['material']?>"><br>
+        <label>Precio.....</label>
+        <input type="text" name="precio" value="<?php echo $mostrar['precio']?>"><br> 
+        <label>Existencias</label>
+        <input type="text" name="existencias" value="<?php echo $mostrar['existencias']?>"><br>
         <input type="submit" value="ENVIAR DATOS">
         
     </form>

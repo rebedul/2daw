@@ -1,5 +1,5 @@
 <?php
-
+// <<<< Datos procedentes de UPDATE.PHP
 // Fichero con la CONEXION
 include("con_db.php");
 include("header.html");
