@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <iframe src="header.html" width="100%" height="150px" frameborder="0"></iframe>
+    <?php
+       include("header.html");
+    ?>
     <div class="container">
-        <a href="c1.html">ALTAS nuevos artículos</a><br>
+        <a href="c1.php">ALTAS nuevos artículos</a><br>
+    </div>
+    <div class="container">
         <a href="read.php">LEER, MODIFICAR y ELIMINAR artículos</a><br>
     </div>
     

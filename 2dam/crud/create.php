@@ -1,8 +1,6 @@
 <?php
 
-//"server","usuario","password","basedatos"
-$conexion = mysqli_connect("localhost","root","","plata");
-
+include("con_db.php");
 
 echo '<link href="/css/style.css" type="text/css" rel="stylesheet">';
 

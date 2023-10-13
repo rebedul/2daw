@@ -8,7 +8,12 @@
 
 </head>
 <body>
-    <iframe src="header.html" width="100%" height="50px" frameborder="0"></iframe>
+    <div class="especial">
+        <?php
+            include("header.html");
+          ?>
+
+    </div>
 
     <?php
         include("con_db.php");

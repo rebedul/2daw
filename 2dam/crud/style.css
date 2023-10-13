@@ -23,3 +23,16 @@ button{
     font-weight: bold;
     text-align: center;
 }
+
+.encabezado{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+.cab{
+    display:flex;
+    align-content: center;
+    text-align: center;
+}
