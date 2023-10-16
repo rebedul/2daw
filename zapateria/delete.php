@@ -14,6 +14,8 @@
         $sql = "DELETE FROM articulos WHERE codigo = $codigo";
 
         $mandato = mysqli_query($conexion,$sql);
+       
+
 
         if ($mandato){
             echo "Registro ".$codigo." BORRADO CORRECTAMENTE";
@@ -23,5 +25,7 @@
             echo "NO HAY CONEXIÓN, O VETE TÚ A SABER...";
         }
     ?>
+
+
 </body>
 </html>

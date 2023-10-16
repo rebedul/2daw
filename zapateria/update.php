@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MODIFICACIONES ARTÍCULOS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-<iframe src="header.html" width="100%" height="50px" frameborder="0"></iframe>
+        <?php
+            include("header.html");
+        ?>
+
 <!-- Datos que pasamos a UPDATE2.PHP -->
     <?php
         include("con_db.php");
@@ -17,6 +20,7 @@
         $mostrar = mysqli_fetch_array($resultado);
     ?>
 
+    <div class="container">
     <form action="update2.php" method="post" autocomplete="off">
         <!-- VALUE: valor que procede de la Tabla ARTICULOS, que entendermos 'por defecto' para cada campo -->
         <label>Código....</label>
@@ -37,8 +41,8 @@
         <label>Existencias</label>
         <input type="text" name="existencias" value="<?php echo $mostrar['existencias']?>"><br>
         <input type="submit" value="ENVIAR DATOS">
-        
     </form>
+    </div>
 
     
 </body>

@@ -20,10 +20,10 @@ $mandato = "UPDATE articulos SET marca='$marca',tipo='$tipo',tallas='$talla',col
 
 $resultado = mysqli_query ($conexion,$mandato);
 
-if ($resultado){
-echo "<p class='exito'>Modificación del artículo </p>".$marca."<p class='exito'> grabada con éxito</p><br>"; // si éxito, aplicamos CSS
-echo "Devolviendo al FORMULARIO principal...<br>";
-header("Refresh: 2; url=c1.html");
-}
+// if ($resultado){
+// echo "<p class='exito'>Modificación del artículo </p>".$marca."<p class='exito'> grabada con éxito</p><br>"; // si éxito, aplicamos CSS
+// echo "Devolviendo al FORMULARIO principal...<br>";
+header("Refresh: 0; url=read.php");
+// }
 
 ?>
