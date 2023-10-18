@@ -10,3 +10,15 @@
 table{
   background-color: azure;
 }
+
+.cabecera{
+    color: blue;
+}
+
+.container{
+  border-radius: 15px;
+  padding: auto 50px;
+  width: 75%;
+  background-color: rgba(240, 248, 255, 0.163);
+
+}

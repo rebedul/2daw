@@ -4,6 +4,8 @@ include("con_db.php");
 include("header.html");
 
 echo "<link rel='stylesheet' href='./css/style.css'>";
+echo "<link rel="icon" href="img/favicon.ico" type="image/x-icon">";
+
 
 $codigo = $_POST['codigo'];
 $marca = $_POST['marca'];
@@ -28,7 +30,7 @@ if (!mysqli_num_rows($resultadox)){     //Con la negación (!), esperamos un res
         if ($resultado){
             echo "<p class='exito'>Registro del artículo </p>".$marca."<p class='exito'> grabado con éxito</p><br>"; // si éxito, aplicamos CSS
             echo "Devolviendo al FORMULARIO principal...<br>";
-            header("Refresh: 1; url=c1.html");
+            header("Refresh: 1; url=c1.php");
         }
         else{
 

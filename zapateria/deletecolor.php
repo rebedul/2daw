@@ -12,16 +12,16 @@
         include("header.html");
         include("con_db.php");
 
-        $codigo = $_GET['codigo']; //LLEGA DE READ.PHP, BOTÓN "BORRAR"
-        $sql = "DELETE FROM articulos WHERE codigo = $codigo";
+        $codcolor = $_GET['codcolor']; //LLEGA DE READ.PHP, BOTÓN "BORRAR"
+        $sql = "DELETE FROM colores WHERE codcolor = $codcolor";
 
         $mandato = mysqli_query($conexion,$sql);
        
 
 
         if ($mandato){
-            echo "Registro ".$codigo." BORRADO CORRECTAMENTE";
-            header("Refresh: 2; url=read.php");
+            echo "Registro ".$codcolor." BORRADO CORRECTAMENTE";
+            header("Refresh: 2; url=readcolor.php");
         }
         else{
             echo "NO HAY CONEXIÓN, O VETE TÚ A SABER...";
