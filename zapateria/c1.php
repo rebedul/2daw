@@ -9,8 +9,8 @@
     <meta http-equiv="Cache-Control" content="no-cache,mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
     
-    <title>CRUD: Entrada de datos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CRUD: Entrada de datos ARTÍCULOS</title>
+
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 
@@ -21,8 +21,8 @@
     <?php
     include("header.html");
     ?>
-    
-   <div class="container">
+   <div class="supercontainer">
+    <div class="container">
 
        <form action="c2.php" method="post" autocomplete="off">
            
@@ -60,7 +60,8 @@
            
        </form>
     
-   </div> 
+    </div> 
+   </div>
 </body>
 
 </html>

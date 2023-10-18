@@ -10,7 +10,6 @@
     <meta http-equiv="Pragma" content="no-cache">
     
     <title>CRUD: Entrada de datos COLORES</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 

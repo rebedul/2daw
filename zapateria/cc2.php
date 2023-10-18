@@ -3,7 +3,6 @@
 include("con_db.php");
 include("header.html");
 
-echo "<link rel='stylesheet' href='./css/style.css'>";
 echo "<link rel="icon" href="img/favicon.ico" type="image/x-icon">";
 
 

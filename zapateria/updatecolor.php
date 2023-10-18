@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MODIFICACIONES COLORES</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>CRUD: MODIFICACIONES de COLORES</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 </head>
