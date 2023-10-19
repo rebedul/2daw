@@ -12,7 +12,6 @@ body{
     flex-direction: column;
     
 
-    margin: 0px;
     font-family: 'Roboto', sans-serif;
     background-color: gainsboro;
     overflow: hidden;
@@ -38,18 +37,35 @@ table a{
   100% {background-position: 15% 20%;}
 }
 
-header{
+/* header{
     text-align: center;
-}
+} */
 
 form label{
   color: black;
   font-weight: normal;
   font-size: 16px;
 }
+
+/* .form-control me-2{
+  width: 0;
+
+} */
+
+.d-flex{
+  width: 250px;
+
+}
+
 table button{
   height:100%;
   width: 100%;
+}
+
+.supermenu{
+  display: flex;
+  align-items: end;
+
 }
 
 .entrada{
@@ -77,6 +93,10 @@ a{
     color: white;
     width: 100%;
     font-weight: bold;
+}
+
+input{
+  margin-bottom: 5px;
 }
 
 .supercontainer{
