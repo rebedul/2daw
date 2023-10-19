@@ -2,7 +2,7 @@
 // <<<< Datos procedentes de UPDATECOLOR.PHP
 // Ficheros con la CONEXION y CABECERA
 include("con_db.php");
-include("header.html");
+include("header.php");
 
 echo "<link rel='stylesheet' href='./css/style.css'>";
 

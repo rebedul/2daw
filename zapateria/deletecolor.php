@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        include("header.html");
+        include("header.php");
         include("con_db.php");
 
         $codcolor = $_GET['codcolor']; //LLEGA DE READ.PHP, BOTÓN "BORRAR"

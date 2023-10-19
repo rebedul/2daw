@@ -1,7 +1,7 @@
 <?php
 
 include("con_db.php");
-include("header.html");
+include("header.php");
 
 echo "<link rel="icon" href="img/favicon.ico" type="image/x-icon">";
 

@@ -19,7 +19,7 @@
 <body>
 
     <?php
-    include("header.html");
+    include("header.php");
     ?>
    <div class="supercontainer">
     <div class="container">
@@ -55,6 +55,8 @@
            <input type="text" name="material" placeholder="Material"><br>
            <input type="text" name="precio" placeholder="Precio"><br> 
            <input type="text" name="existencias" placeholder="Existencias"><br>
+           <label for="imagen">Elija una imagen:</label>
+           <input type="file" id="imagen" name="imagen">
    
            <input type="submit" value="ENVIAR DATOS">
            
@@ -62,6 +64,8 @@
     
     </div> 
    </div>
+
+
 </body>
 
 </html>

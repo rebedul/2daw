@@ -2,7 +2,7 @@
 // <<<< Datos procedentes de UPDATE.PHP
 // Fichero con la CONEXION
 include("con_db.php");
-include("header.html");
+include("header.php");
 
 echo "<link rel='stylesheet' href='./css/style.css'>";
 

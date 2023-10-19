@@ -1,14 +1,14 @@
 <?php
 
 include("con_db.php");
-include("header.html");
+include("header.php");
 echo "<link rel="icon" href="img/favicon.ico" type="image/x-icon">";
 
 
-$codigo = $_POST['codigo'];
-$marca = $_POST['marca'];
-$tipo = $_POST['tipo'];
-$talla = $_POST['talla'];
+$codigo = trim($_POST['codigo']);
+$marca = trim($_POST['marca']);
+$tipo = trim($_POST['tipo']);
+$talla = trim($_POST['talla']);
 $color = $_POST['color'];
 $material = $_POST['material'];
 $precio = $_POST['precio'];
@@ -40,4 +40,12 @@ else{
     echo "ALTO AHÍ: ".$codigo." YA EXISTE!!!";
 }
 //---- FIN COMPROBACIÓN
+
+$imagen='';
+if(isset($_FILES["imagen"])) {
+    $file = $_FILES['imagen'];  //$_FILES contiene toda la info. de la imagen
+    $nombreImagen = $_FILES['name']; // El nombre de la imagen
+    $sizeImage = $_FILES['size'];   // Tamaño en bytes
+    $tipo = $_FILES['type']; // TIPO de fichero
+}
 ?>

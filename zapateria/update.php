@@ -10,7 +10,7 @@
 </head>
 <body>
         <?php
-            include("header.html");
+            include("header.php");
         ?>
 
 <!-- Datos que pasamos a UPDATE2.PHP -->

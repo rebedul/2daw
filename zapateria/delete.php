@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        include("header.html");
+        include("header.php");
         include("con_db.php");
 
         $codigo = $_GET['codigo']; //LLEGA DE READ.PHP, BOTÓN "BORRAR"

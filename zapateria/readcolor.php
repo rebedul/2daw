@@ -24,7 +24,7 @@
 <body>
     <div class="especial">
         <?php
-            include("header.html");
+            include("header.php");
         ?>
 
     </div>
