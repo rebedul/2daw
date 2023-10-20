@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-cache,mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
     
-    <title>CRUD: Entrada de datos COLORES</title>
+    <title>CRUD: Entrada datos COLORES</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 
