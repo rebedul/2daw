@@ -57,7 +57,7 @@
            <input type="text" name="existencias" placeholder="Existencias"><br>
            <label for="imagen">Elija una imagen:</label>
            <input type="file" id="imagen" name="imagen">
-   
+            <br>
            <input type="submit" value="ENVIAR DATOS">
            
        </form>
