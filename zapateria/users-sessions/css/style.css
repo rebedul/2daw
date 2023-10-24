@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    margin-bottom: 8px;
+}
+
+.ht{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
