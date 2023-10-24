@@ -24,13 +24,14 @@
    <div class="supercontainer">
     <div class="container">
 
-       <form action="c2.php" method="post" autocomplete="off">
+       <form action="c2.php" method="post" autocomplete="off" enctype="multipart/form-data">
            
            <input type="text"  name="codigo" autofocus placeholder="Código"><br>
            <input type="text"  name="marca" placeholder="Marca"><br>
            <input type="text" name="tipo" placeholder="Tipo"><br>
            <input type="text" name="talla" placeholder="Talla"><br>
-           <!-- DESPLEGABLE buscando registros en la relacionada COLORES -->
+
+           <!-- INICIO DESPLEGABLE buscando registros en la relacionada COLORES -->
            <select name="color">
            <?php
                 include("con_db.php");
@@ -42,17 +43,34 @@
                         while ($row = mysqli_fetch_assoc($result)) { 
 
                             echo "<option value='".$row['codcolor']."'>".$row['nomcolor']."</option>";                    // MOSTRAMOS REGISTROS
-
                         }
                     }else{
                         echo "<option value='No hay registros'> No hay Registros </option>";
                     }
-
             ?>
             </select>
-            <!-- FIN DESPLEGABLE -->
+            <!-- FIN DESPLEGABLE COLORES-->
+            
+            <!-- INICIO DESPLEGABLE MATERIALES -->
+           <select name="material">
+           <?php
+                include("con_db.php");
+                $sql = "SELECT * FROM materiales";
+                $result = mysqli_query ($conexion,$sql);
+
+
+                if (mysqli_num_rows($result)){          // SI HAY REGISTROS EN LA TABLA
+                        while ($row = mysqli_fetch_assoc($result)) { 
+                            echo "<option value='".$row['clavemat']."'>".$row['nombrematerial']."</option>";                    // MOSTRAMOS REGISTROS
+                        }
+                    }else{
+                        echo "<option value='No hay registros'> No hay Registros </option>";
+                    }
+            ?>
+            </select>
+            <!-- FIN DESPLEGABLE MATERIALES-->
+
             <br>
-           <input type="text" name="material" placeholder="Material"><br>
            <input type="text" name="precio" placeholder="Precio"><br> 
            <input type="text" name="existencias" placeholder="Existencias"><br>
            <label for="imagen">Elija una imagen:</label>
