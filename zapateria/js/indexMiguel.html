@@ -1,0 +1,23 @@
+<!-- Crear código JS que pida un número al usuario y escriba por pantalla 
+todos sus DIVISORES -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad = prompt("Usuario, dame la edad: ");
+        let nombre = prompt("Usuario, dime de quién se trata... ");
+        if (edad <18 || nombre.toUpperCase() === "MIGUEL"){ //pasamos a mays. incondicionalmente
+            document.write(nombre.toUpperCase()+"<br>");    //se pasa a mays. sólo ca presentación
+            document.write("NI HABLARRRRRR!!!")
+        }else{
+            document.write("SÍ QUE PUEDE");
+        }
+    </script>
+</body>
+</html>

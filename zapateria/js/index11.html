@@ -1,0 +1,21 @@
+<!-- Crear código JS que pida un número al usuario y escriba por pantalla 
+todos sus DIVISORES -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Usuario, escribe un numero: ");
+        for (let i = num; i > 0 ; i--) {
+           if (num % i == 0){
+            document.write(num+" es divisible entre "+i+"<br>");
+           }
+        }
+    </script>
+</body>
+</html>

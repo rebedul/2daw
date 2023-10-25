@@ -1,0 +1,29 @@
+<!-- Crear código JS que pida un número al usuario y determine si es divisible 
+entre 2,3,5, ó 7 (cualquiera de ellos)
+Mensaje al final si no es divisible entre ninguno de ellos (primo) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let div2=2,div3=3,div5=5,div7=7;
+        let num = prompt("Usuario, escribe un numero: ");
+        if(num % div2 == 0 ){
+        document.write(num+" es divisible entre "+div2+"<br>");}
+        if(num % div3 == 0 ){
+        document.write(num+" es divisible entre "+div3+"<br>");}
+        if(num % div5 == 0 ){
+        document.write(num+" es divisible entre "+div5+"<br>");}
+        if(num % div7 == 0 ){
+        document.write(num+" es divisible entre "+div7+"<br>"); }   
+        if(num % div2 != 0 && num % div3 != 0 && num % div5 != 0 && num % div7 != 0){
+            document.write(num + " no es divisble por ninguno de los numeros mencionados<br>" );
+        }
+    </script>
+</body>
+</html>

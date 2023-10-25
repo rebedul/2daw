@@ -1,0 +1,39 @@
+<!-- Pide una nota (número). Muestra la calificación según la nota:
+0-5: Insuficiente
+5-6: Suficiente
+6-7: Bien
+7-9: Notable
+9-10: Sobresaliente -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota =-1;
+        while (nota < 0 || nota >10){
+            nota = prompt("Usuario, dame la nota: ");
+        }
+        if (nota < 5) {
+            document.write("SUSPENSO");            
+        }
+        else if(nota >= 5 && nota < 6){
+            document.write("SUFICIENTE");
+        }
+        else if(nota >= 6 && nota < 7){
+            document.write("BIEN");
+        }
+        else if(nota >= 7 && nota < 9){
+            document.write("NOTABLE");
+        }       
+        else{
+            document.write("SOBRESALIENTE");
+        }
+    </script>
+</body>
+</html>
