@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- INICIO Contamos las veces que aparecen las vocales en una frase -->
+    <script>
+        var cadena = prompt("Usuario, danos una frase, xfavor ")
+        var cnt = 0;
+        for(var i=0; i<cadena.length;i++){
+            if(cadena[i]=="a"||cadena[i]=="e"||cadena[i]=="i"||cadena[i]=="o"||cadena[i]=="u"){
+                cnt++;
+            }
+        }
+        document.write("Hay un total de "+cnt+" vocales");
+    </script>
+    <!-- FIN Contamos las veces que aparecen las vocales en una frase -->
+
+
+
+</body>
+</html>
