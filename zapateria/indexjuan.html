@@ -1,0 +1,27 @@
+<!-- Juan tiene N euros, David tiene la mitad de lo que posee Juan y José la mitad de lo que poseen Juan y David juntos. Mostrar el promedio de la cantidad de dinero que tienen entre los tres y redondearlo -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scrip, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var juan = parseInt(prompt("Dime cuánto tienes, Juan: "));
+        var david = juan/2;
+        var jose = (juan + david) / 2;
+
+        document.write("Juan: "+juan);
+        document.write("David: "+david);
+        document.write("Jose: "+jose);
+        
+        document.write("La cantidad sin redondear es "+((juan+david+jose)/3));
+
+        var prom = ((juan + david + jose) /3);
+        document.write("El promedio es "+Math.round(prom));
+    </script>
+    
+</body>
+</html>
