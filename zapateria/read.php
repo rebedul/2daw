@@ -37,12 +37,12 @@
          echo "<tr>";
                 echo "<th>Código</th>";         // CABECERA DE TABLA
                 echo "<th>Marca</th>";
-                echo "<th>Tipo</th>";
                 echo "<th>Tallas</th>";
                 echo "<th>Color</th>";
                 echo "<th>Material</th>";
                 echo "<th>Precio</th>";
                 echo "<th>Existencias</th>";
+                echo "<th>Imagen</th>";
                 echo "<th>BORRAR</th>";
                 echo "<th>MODIFICAR</th>";
             echo "</tr><br>";
@@ -50,7 +50,6 @@
                 echo "<tr>";                    // MOSTRAMOS REGISTROS
                     echo "<td>".$mostrar['codigo']."</td>";
                     echo "<td>".$mostrar['marca']."</td>";
-                    echo "<td>".$mostrar['tipo']."</td>";
                     echo "<td>".$mostrar['tallas']."</td>";
                     echo "<td>".$mostrar['color']."</td>";
                     echo "<td>".$mostrar['material']."</td>";
@@ -59,6 +58,9 @@
                     // VERSIÓN HIPERVÍNCULO (deshabilitada):
                     // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>"; 
                     // VERSIÓN BOTÓN (la escogida):
+                    echo "<td>".$mostrar['imagen']."</td>";
+                    // INICIO Muestra la ruta de la imagen
+
                     echo "<td><button onclick='return confirmacion()'><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR ".$mostrar['codigo']."</button></td>";
                     echo "<td><button><a href='update.php?codigo=".$mostrar['codigo']."'>MODIFICAR ".$mostrar['codigo']."</button></td>";
                     echo "</tr>";          

@@ -23,7 +23,8 @@
     ?>
 
     <div class="container">
-    <form action="update2.php" method="post" autocomplete="off">
+    
+    <form action="update2.php" method="post" autocomplete="off" enctype="multipart/form-data">
         <!-- VALUE: valor que procede de la Tabla ARTICULOS, que entendermos 'por defecto' para cada campo -->
         <label>Código....</label>
         <!-- Código será READONLY, no se puede cambiar -->
@@ -31,8 +32,6 @@
         <label>Marca.....</label>
         <input type="text" name="marca" value="<?php echo $mostrar['marca']?>"><br>
         <label>Tipo........</label>
-        <input type="text" name="tipo" value="<?php echo $mostrar['tipo']?>"><br>
-        <label>Tallas.....</label>
         <input type="text" name="talla" value="<?php echo $mostrar['tallas']?>"><br>
         <label>Color......</label>
         <input type="text" name="color" value="<?php echo $mostrar['color']?>"><br>
@@ -42,6 +41,8 @@
         <input type="text" name="precio" value="<?php echo $mostrar['precio']?>"><br> 
         <label>Existencias</label>
         <input type="text" name="existencias" value="<?php echo $mostrar['existencias']?>"><br>
+        <label for="imagen">Elija una imagen:</label>
+        <input type="file" id="imagen" name="imagen"><br>
         <input type="submit" value="ENVIAR DATOS">
     </form>
     </div>
