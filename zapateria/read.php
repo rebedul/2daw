@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD: LISTAR REGISTROS de ARTÍCULOS</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <!-- LO LLAMAMOS DESDE EL ONCLICK DEL BOTÓN -->
 <script>
     function confirmacion(){
@@ -35,6 +36,7 @@
         if (mysqli_num_rows($result)){          // SI HAY REGISTROS EN LA TABLA
         echo "<table border='1' cellpadding='0' cellspacing='0' align='center'>";
          echo "<tr>";
+         
                 echo "<th>Código</th>";         // CABECERA DE TABLA
                 echo "<th>Marca</th>";
                 echo "<th>Tallas</th>";

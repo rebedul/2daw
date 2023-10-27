@@ -7,39 +7,34 @@ body{
     background-position: top;
     background-repeat:repeat;
     animation: rotate 8s infinite alternate linear;
-    height: 100%;  
+    height: 100%;
     display:flex;
     flex-direction: column;
-    
-
     font-family: 'Roboto', sans-serif;
     background-color: gainsboro;
     overflow: hidden;
 }
 
 table{
-  background-color: azure;
+  background-color: rgb(246, 255, 255);
 }
-
 table a{
   color: black;
   font-weight: normal;
   text-align: center;
 }
 
+
+th{
+  padding-left: 10px;
+}
+
 .cabecera{
     color: blue;
 }
-
-
-
 @keyframes rotate{
   100% {background-position: 15% 20%;}
 }
-
-/* header{
-    text-align: center;
-} */
 
 form label{
   color: black;
@@ -54,7 +49,6 @@ form label{
 
 .d-flex{
   width: 250px;
-
 }
 
 .quesevea{
@@ -136,7 +130,6 @@ a:hover{
       width: 75%;
       background-color: rgba(240, 248, 255, 0.163);
       align-items: center;
-    
     }
 
  
@@ -209,7 +202,5 @@ a:hover{
         font-size: 50%;
         width: 100%;
         font-weight: bold;
-    }
-
-     
+    } 
   }
