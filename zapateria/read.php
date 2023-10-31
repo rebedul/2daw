@@ -54,24 +54,19 @@
                     echo "<td>".$mostrar['codigo']."</td>";
                     echo "<td>".$mostrar['marca']."</td>";
                     echo "<td>".$mostrar['tallas']."</td>";
-                    echo "<td>".$mostrar['color']."</td>";
+                    echo '<td>'.$mostrar['color'].'</td>';
                     echo "<td>".$mostrar['material']."</td>";
-                    echo "<td class='derecha'>".$mostrar['precio']."</td>";
-                    echo "<td class='derecha'>".$mostrar['existencias']."</td>";
+                    echo '<td class="derecha">'.$mostrar['precio'].'</td>';
+                    echo '<td class="derecha">'.$mostrar['existencias'].'</td>';
                     // VERSIÓN HIPERVÍNCULO (deshabilitada):
                     // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>"; 
                     // mostramos IMAGEN
-                    echo "<td><img class='imgtabla' src='".substr($mostrar['imagen'],3)."'</td>";
+                    //echo '<td><img class="imgtabla" src="'.substr($mostrar['imagen'],3).'"</td>';
 
-                    // JS PARA AMPLIAR Y QUITAR IMAGEN
-                   
+                    echo '<td><a href="'.substr($mostrar['imagen'],3).'"><img class="imgtabla" src="'.substr($mostrar['imagen'],3).'"</a></td>';
 
 
-                    // INICIO Muestra la ruta de la imagen
 
-                    echo "<td><button onclick='return confirmacion()'><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR ".$mostrar['codigo']."</button></td>";
-                    echo "<td><button><a href='update.php?codigo=".$mostrar['codigo']."'>MODIFICAR ".$mostrar['codigo']."</button></td>";
-                    echo "</tr>";          
                 }
         echo "</table>";
 

@@ -1,3 +1,4 @@
+        <script>
         function ampliarImagen(imagen) {
             var imagenAmpliada = document.getElementById('imagen-ampliada');
             imagenAmpliada.src = imagen.src;
@@ -8,3 +9,4 @@
         function cerrarImagen() {
             document.querySelector('.imagen-ampliada').style.display = 'none';
         }
+        </script>
