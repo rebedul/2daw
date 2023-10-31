@@ -113,6 +113,10 @@ input{
   margin:0;
 }
 
+.imgtabla{
+ width: 75px; 
+ height: 75px;
+}
 
 a:hover{
     color: green;

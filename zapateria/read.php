@@ -44,7 +44,8 @@
                 echo "<th>Material</th>";
                 echo "<th>Precio</th>";
                 echo "<th>Existencias</th>";
-                echo "<th>Imagen</th>";
+                echo "<th> Imagen</th>";
+
                 echo "<th>BORRAR</th>";
                 echo "<th>MODIFICAR</th>";
             echo "</tr><br>";
@@ -59,8 +60,13 @@
                     echo "<td class='derecha'>".$mostrar['existencias']."</td>";
                     // VERSIÓN HIPERVÍNCULO (deshabilitada):
                     // echo "<td><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR</td>"; 
-                    // VERSIÓN BOTÓN (la escogida):
-                    echo "<td>".$mostrar['imagen']."</td>";
+                    // mostramos IMAGEN
+                    echo "<td><img class='imgtabla' src='".substr($mostrar['imagen'],3)."'</td>";
+
+                    // JS PARA AMPLIAR Y QUITAR IMAGEN
+                   
+
+
                     // INICIO Muestra la ruta de la imagen
 
                     echo "<td><button onclick='return confirmacion()'><a href='delete.php?codigo=".$mostrar['codigo']."'>BORRAR ".$mostrar['codigo']."</button></td>";
